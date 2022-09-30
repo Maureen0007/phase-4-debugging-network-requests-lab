@@ -18,7 +18,7 @@ function ToyCard({ toy, onDeleteToy, onUpdateToy }) {
       likes: toy.likes + 1,
     };
 
-    fetch(`/toys/${id}`, {
+    fetch(`/toys/like/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
